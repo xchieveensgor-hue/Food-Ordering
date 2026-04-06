@@ -6,7 +6,7 @@ st.title("Food Ordering System")
 st.markdown("---")
 
 customer_name = st.text_input("Enter Customer Name")
-food = st.selectbox("Select Food", options=["Nasi Lemak -- RM5", "Chicken Chop -- RM12", "Burger -- RM8"])
+food = st.selectbox("Select Food", options=["Nasi Lemak ", "Chicken Chop ", "Burger "])
 quantity = st.number_input("Quantity", min_value=1, step=1)
 
 if st.button("Order"):
@@ -24,7 +24,7 @@ if st.button("Order"):
             st.write(f"Name: {customer_name}")
             st.write(f"Food: {food}")
             st.write(f"Quantity: {quantity}")
-            st.write(f"Total: RM{total:.2f}")
+            st.write(f"Total Price: RM{total:.2f}")
     
     except Exception as e:
         st.error(f"Error: {str(e)}")
