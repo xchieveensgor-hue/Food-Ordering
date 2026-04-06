@@ -5,8 +5,8 @@ st.set_page_config(page_title="Food Order", layout="centered")
 st.title("Food Ordering System")
 st.markdown("---")
 
-customer_name = st.text_input("Customer Name")
-food = st.selectbox("Food Selection", options=["Nasi Lemak -- RM5", "Chicken Chop -- RM12", "Burger -- RM8"])
+customer_name = st.text_input("Enter Customer Name")
+food = st.selectbox("Select Food", options=["Nasi Lemak -- RM5", "Chicken Chop -- RM12", "Burger -- RM8"])
 quantity = st.number_input("Quantity", min_value=1, step=1)
 
 if st.button("Order"):
